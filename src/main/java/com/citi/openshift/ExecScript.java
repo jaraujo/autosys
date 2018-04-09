@@ -1,6 +1,4 @@
-package com.citi.openshift
-
-//com.citi.openshift;
+package com.citi.openshift;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -62,7 +60,7 @@ public class ExecScript extends HttpServlet {
     public static String runScript(final String script) {
 
 
-        ExecScript.LOG.info("Entering the runScript method");
+        ExecScript.LOG.info("In the RunScript method");
         String[] cmd = null;
 
 	/** 

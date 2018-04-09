@@ -49,5 +49,5 @@
       </build>
     </profile>
   </profiles>
-	<artifactId>AutoSys</artifactId>
+<artifactId>AutoSys</artifactId>
 </project>
