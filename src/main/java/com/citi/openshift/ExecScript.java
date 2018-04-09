@@ -1,4 +1,4 @@
-package com.citi.openshift
+package com.citi.openshift;
 
 //com.citi.openshift;
 
