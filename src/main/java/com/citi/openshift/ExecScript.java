@@ -30,7 +30,7 @@ public class ExecScript extends HttpServlet {
 
 
     /**
-     * Determine if we are running on Windows, or not.
+     * Determine if we are running on Windows env, or Linux.
      *
      * @return true if running on Windows.
      */
