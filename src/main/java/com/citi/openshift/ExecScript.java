@@ -83,7 +83,7 @@ public class ExecScript extends HttpServlet {
         try {
 
             ExecScript.LOG.info("Calling the script");
-            final ProcessBuilder pb = new ProcessBuilder("myScript.bat");
+            final ProcessBuilder pb = new ProcessBuilder(cmd);
             final Process p = pb.start();
             final InputStream is = p.getInputStream();
             final InputStreamReader isr = new InputStreamReader(is);
