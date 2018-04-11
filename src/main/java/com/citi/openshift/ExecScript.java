@@ -69,11 +69,11 @@ public class ExecScript extends HttpServlet {
 	**/
 
         if (ExecScript.isWindows()) {
-		cmd = new String[] {"myScript.bat"};
+		cmd = new String[] {"scripts/myScript.bat"};
             // cmd = new String[] { script };
 
         } else {
-		cmd = new String[] {"sh", "myScript.sh"};
+		cmd = new String[] {"sh", "/scrips/myScript.sh"};
             //cmd = new String[] { "sh", script };
         }
 
