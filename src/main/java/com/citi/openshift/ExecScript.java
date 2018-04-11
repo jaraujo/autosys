@@ -69,13 +69,15 @@ public class ExecScript extends HttpServlet {
 	**/
 
         if (ExecScript.isWindows()) {
-		cmd = new String[] {"scripts/myScript.bat"};
+        	cmd = new String[] {"scripts/myScript.bat"};
             // cmd = new String[] { script };
 
         } else {
-		cmd = new String[] {"sh", "scripts/myScript.sh"};
+        	ExecScript.LOG.info("Calling a non-windows script");
+        	cmd = new String[] {"sh", "scripts/myScript.sh"};
             //cmd = new String[] { "sh", script };
         }
+        
 
 
         
