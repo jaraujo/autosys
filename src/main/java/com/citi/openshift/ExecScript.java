@@ -73,7 +73,7 @@ public class ExecScript extends HttpServlet {
             // cmd = new String[] { script };
 
         } else {
-        	ExecScript.LOG.info("Calling a non-windows script");
+        	ExecScript.LOG.info("Calling a Unix script");
         	cmd = new String[] {"scripts/myScript.sh"};
             //cmd = new String[] { "sh", script };
         }
