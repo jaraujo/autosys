@@ -1,1 +1,1 @@
-echo "Called shell program!" > test.log
+echo "Calling unix shell program!" > test.log
