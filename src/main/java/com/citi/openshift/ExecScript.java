@@ -74,7 +74,7 @@ public class ExecScript extends HttpServlet {
 
         } else {
         	ExecScript.LOG.info("Calling a non-windows script");
-        	cmd = new String[] {"sh", "scripts/myScript.sh"};
+        	cmd = new String[] {"scripts/myScript.sh"};
             //cmd = new String[] { "sh", script };
         }
         
@@ -85,6 +85,7 @@ public class ExecScript extends HttpServlet {
         try {
 
             ExecScript.LOG.info("Calling the script");
+            
             final ProcessBuilder pb = new ProcessBuilder(cmd);
             final Process p = pb.start();
             final InputStream is = p.getInputStream();
