@@ -73,7 +73,7 @@ public class ExecScript extends HttpServlet {
             // cmd = new String[] { script };
 
         } else {
-		cmd = new String[] {"sh", "/scripts/myScript.sh"};
+		cmd = new String[] {"sh", "scripts/myScript.sh"};
             //cmd = new String[] { "sh", script };
         }
 
